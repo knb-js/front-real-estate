@@ -1,11 +1,13 @@
-
+import { Home } from "./Pages/Home"
 function App() {
 
   return (
-    <div className="">
-      <h1 className="text-red-600">HOLA MUNDO</h1>
+    <div className="bg-[#333333] w-full min-h-screen">
+      <Home />      
     </div>
+    
   )
 }
 
 export default App
+
