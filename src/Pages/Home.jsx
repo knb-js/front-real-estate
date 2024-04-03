@@ -1,4 +1,5 @@
 import Cielo from '../images/cielo.jpg';
+import { Link } from 'react-router-dom';
 //import Logo from '../images/Logo.png';
 //import Logo2 from '../images/Logo2.png';
 
@@ -13,7 +14,7 @@ export const Home = () => {
                   <a href="/pagina1" className="text-white px-4 py-2">Home</a>
                   <a href="/pagina2" className="text-white px-4 py-2">Casas</a>
                   <a href="/pagina3" className="text-white px-4 py-2 mr-32">Departamentos</a>
-                  <a href="/pagina4" className="text-white px-4 py-2 border border-gray-400 rounded-xl ">Ingresar</a>
+                  <a href="/pagina4"><Link to="/login"  className="text-white px-4 py-2 border border-gray-400 rounded-xl ">Ingresar</Link></a>
               </div>
           </div>
       </header>
