@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { landing } from '../../assets/images';
+import { MdLogout } from "react-icons/md";
 
 export const Header = ({ scrollToAboutUs }) => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -40,6 +41,7 @@ export const Header = ({ scrollToAboutUs }) => {
                     <ul className="flex text-base [&>li>a]:inline-block [&>li>a]:px-4">
                         <li><a href="" ><Link to="/login" className='hover:text-cyan-400 transition-colors duration-300 text-xl'>Ingresar</Link></a></li>
                         <li><a href="" ><Link to="/register" className='hover:text-cyan-400 transition-colors duration-300 text-xl'>Registrarse</Link></a></li>
+                        <li><a href="" className='hover:text-cyan-400 transition-colors duration-300 text-xl' ><MdLogout size={30}/></a></li>
                     </ul>
                 </nav>
             </header>
